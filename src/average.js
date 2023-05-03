@@ -13,11 +13,11 @@
 
 const average = (arrNum) => {
   if (arrNum.length === 0) {
-    return 'undefined';
+    return undefined;
   }
   for (let index = 0; index < arrNum.length; index += 1) {
     if (typeof arrNum[index] !== 'number') {
-      return 'undefined';
+      return undefined;
     }
   }
   let sum = 0;
