@@ -24,6 +24,4 @@ const createMenu = (menu) => ({
   },
 });
 
-console.log(createMenu({ food: { pizza: 10.00 }, drinks: { coca: 3.50 } }));
-
 module.exports = createMenu;

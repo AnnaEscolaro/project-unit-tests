@@ -37,13 +37,6 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
   });
 
   it('pay() deve retornar a soma dos preços de tudo que foi pedido, conforme registrado em consumption', () => {
-    const menuCreated = createMenu({ food: {}, drinks: { coca: 3.50 } });
-    menuCreated.order('coca');
-    menuCreated.order('coca');
-    expect(menuCreated.consumption).toEqual(['coca', 'coca']);
-  });
-
-  it('pay() deve retornar a soma dos preços de tudo que foi pedido, conforme registrado em consumption', () => {
     const menuCreated = createMenu({ food: { pizza: 10.00 }, drinks: { coca: 3.50 } });
     menuCreated.order('coca');
     menuCreated.order('pizza');
